@@ -93,7 +93,7 @@ $(document).ready(function () {
 
     setTimeout(function () {
         $('#data-area').parallax({
-            imageSrc: '/IMG/Mazzi Fiori Casamentos/casamento-feliz-um-guia-para-casamentos-felizes.png'
+            imageSrc: 'images/casamento-feliz-um-guia-para-casamentos-felizes.png'
         });
     }, 250);
 });
