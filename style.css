@@ -1,0 +1,288 @@
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 115px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.row {
+    margin: 0;
+}
+
+.container {
+    padding: 70px 0;
+}
+
+p,
+li {
+    color: #444;
+    font-size: 14px;
+}
+
+header,
+.navbar {
+    background-color: #ffffff80;
+}
+
+#nav-container {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#logo {
+    transition: 0.5s;
+    object-fit: cover;
+}
+
+#logo-footer {
+    width: 15%;
+    margin-right: 1rem;
+    object-fit: cover;
+
+}
+
+#logo:hover {
+    width: 170px;
+    height: 170px;
+}
+
+.navbar-brand {
+    padding: 0;
+    color: #000000;
+    transition: .3s;
+    font-size: 20px;
+}
+
+.navbar-brand:hover {
+    color: #ffffff;
+    text-shadow: 2px 2px 1px #529396;
+}
+
+#navbar-links a {
+    color: #000000;
+}
+
+#navbar-links a:hover {
+    color: #ffffff;
+    text-shadow: 2px 2px 1px #529396;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 1rem .8rem;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+#mainSLider .carousel-inner,
+#mainSlider .carousel-item {
+    height: 90vh;
+}
+
+#projetoSlider .carousel-inner,
+#projetoSlider .carousel-item {
+    height: 30vh;
+}
+
+#mainSlider .carousel-caption {
+    top: 30%;
+}
+
+#mainSlider .carousel-caption h2 {
+    font-size: 50px;
+    margin-bottom: 30px;
+    color: #ffffff;
+    font-family: 'Forum', cursive;
+}
+
+#mainSlider .carousel-caption p {
+    font-size: 22px;
+    font-weight: 300;
+    margin-bottom: 100px;
+    color: #ffff;
+}
+
+.main-btn,
+.footer-btn {
+    background-color: #353d41d7;
+    color: #ffff;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: 3px solid transparent;
+    transition: .5s;
+    text-decoration: none;
+}
+
+.main-btn:hover,
+.footer-btn:hover {
+    color: #529396;
+    background-color: transparent;
+    border-color: #ffffff;
+    text-decoration: none;
+}
+
+.carousel-indicators .active {
+    background-color: #363636;
+}
+
+#about-area {
+    background-color: #353d41;
+}
+
+.color-white {
+    color: #ffffff;
+}
+
+.main-title {
+    color: #444;
+    margin: 0 0 65px 0;
+    font-size: 40px;
+    text-align: center;
+}
+
+.main-title::after {
+    content: "";
+    border-top: 2px solid #444;
+    width: 15%;
+    position: absolute;
+    top: 60px;
+    left: 42.5%;
+}
+
+.main-title-white {
+    color: #ffffff;
+    margin: 0 0 65px 0;
+    font-size: 40px;
+    text-align: center;
+}
+
+.main-title-white::after {
+    content: "";
+    border-top: 2px solid #ffffff;
+    width: 15%;
+    position: absolute;
+    top: 60px;
+    left: 42.5%;
+}
+
+.about-title {
+    font-size: 17px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#about-list {
+    list-style: none;
+    padding-left: 0;
+    color: #ffffffab;
+}
+
+#about-list li {
+    line-height: 30px;
+    color: #ffffffab;
+}
+
+#about-list i {
+    color: #ffffffab;
+    margin-right: 15px;
+}
+
+.about-content {
+    color: #ffffffab;
+}
+
+.service-box {
+    text-align: center;
+    margin-bottom: 50px;
+    padding-top: 20px;
+    transition: .25s;
+}
+
+.service-box h4 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.curriculo:hover {
+    background-color: #5293964d;
+}
+
+.circle-box div {
+    padding: 0 40px;
+}
+
+.progressbar-text {
+    font-weight: bold;
+    font-size: 32px
+}
+
+#data-area p {
+    color: #ffffff;
+    text-align: center;
+    font-size: 26px;
+    margin-top: 20px;
+}
+
+.color-white {
+    color: #ffffff;
+}
+
+.card {
+    margin-bottom: 40px;
+    padding-top: 0%;
+    margin-top: 0%;
+}
+
+.card-text {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.img_card {
+    width: 338px;
+    height: 272px;
+    object-fit: cover;
+}
+
+.bi {
+    padding-right: 1rem;
+    vertical-align: -0.125em;
+    color: #353d41;
+}
+
+.img_main {
+    object-fit: cover;
+    opacity: 0.6;
+}
+
+.img_services {
+    margin-bottom: 1rem;
+}
+
+.img-fluid {
+    margin-right: 10px;
+}
+
+.text-about {
+    color: #ffffff;
+    font-size: 16px;
+}
+
+#home_menu {
+    background-color: #353d41;
+}
+
+.main-title,
+.main-title-white {
+    font-family: 'Forum', cursive;
+    font-size: 45px;
+}
+
+a {
+    text-decoration: none;
+}
