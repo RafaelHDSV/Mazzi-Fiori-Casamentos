@@ -33,7 +33,7 @@ Landing Page for a Wedding Company, exclusively for study.
 
 ### Links
 
-- Live Site URL: https://mazzi-fiori-casamentos.netlify.app
+- Live Site URL: https://mazzi-fiori-casamentos-old.netlify.app
 
 ## My process
 
