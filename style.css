@@ -6,6 +6,7 @@
     --black: #171D26;
 }
 
+/* CORRIGIR */
 @import url('https://fonts.googleapis.com/css?family=Great+Vibes');
 /* font-family: 'Great Vibes', cursive; */
 
@@ -100,6 +101,10 @@ nav {
     text-shadow: 2px 2px 1px var(--white);
 }
 
+.header_mobile {
+    display: none;
+}
+
 .text {
     position: absolute;
     top: 50%;
@@ -154,5 +159,9 @@ nav {
 @media screen and (max-width: 768px) {
     .item_list_header {
         display: none;
+    }
+
+    .header_mobile {
+        display: flex;
     }
 }
