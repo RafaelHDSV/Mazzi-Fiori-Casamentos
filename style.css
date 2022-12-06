@@ -6,8 +6,8 @@
     --black: #171D26;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
-/* font-family: 'Tangerine', cursive; */
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes');
+/* font-family: 'Great Vibes', cursive; */
 
 * {
     padding: 0;
@@ -115,13 +115,15 @@ nav {
 
 .text h1 {
     font-size: 36px;
-    font-family: 'Tangerine';
+    font-family: 'Great Vibes', cursive;
     letter-spacing: .2rem;
+    text-align: center;
 }
 
 .text p {
     font-size: 18px;
-    font-family: 'Tangerine';
+    font-family: 'Great Vibes', cursive;
+    text-align: center;
 }
 
 .main_title span {
@@ -140,11 +142,17 @@ nav {
     border-radius: 3rem;
     text-transform: uppercase;
     font-size: 16px;
-    font-family: 'Tangerine';
+    font-family: 'Great Vibes', cursive;
 }
 
 .btn_primary:hover {
     transform: scale(110%);
     background-color: var(--pink);
     color: var(--white);
+}
+
+@media screen and (max-width: 768px) {
+    .item_list_header {
+        display: none;
+    }
 }
