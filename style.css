@@ -6,6 +6,9 @@
     --black: #171D26;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
+/* font-family: 'Tangerine', cursive; */
+
 * {
     padding: 0;
     margin: 0;
@@ -28,6 +31,15 @@ html {
 .btn_primary {
     cursor: pointer;
     transition: 1s all ease;
+}
+
+.filter {
+    position: absolute;
+    background-color: var(--black);
+    width: 100%;
+    height: 100vh;
+    /* CORRIGIR */
+    opacity: 0.6;
 }
 
 header {
@@ -55,6 +67,7 @@ nav {
     color: var(--white);
     box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
     flex-wrap: wrap;
+    z-index: 2;
 }
 
 .logo {
@@ -96,7 +109,23 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    gap: 2rem;
+    color: var(--white);
+}
+
+.text h1 {
+    font-size: 36px;
+    font-family: 'Tangerine';
+    letter-spacing: .2rem;
+}
+
+.text p {
+    font-size: 18px;
+    font-family: 'Tangerine';
+}
+
+.main_title span {
+    color: var(--green);
 }
 
 .btn_primary {
@@ -109,9 +138,13 @@ nav {
     width: 100%;
     height: 100vh;
     border-radius: 3rem;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: 'Tangerine';
 }
 
 .btn_primary:hover {
-    background-color: var(--white);
-    color: var(--green);
+    transform: scale(110%);
+    background-color: var(--pink);
+    color: var(--white);
 }
