@@ -25,7 +25,6 @@ html {
 }
 
 .logo,
-.item_header,
 .btn_primary {
     cursor: pointer;
     transition: 1s all ease;
@@ -65,7 +64,7 @@ nav {
 }
 
 .logo:hover {
-    transform: scale(3);
+    max-width: 11rem;
 }
 
 .item_list_header {
@@ -75,6 +74,16 @@ nav {
     justify-content: space-around;
     align-items: center;
     gap: 2rem;
+}
+
+.item_header {
+    cursor: pointer;
+    transition: .5s all ease;
+}
+
+.item_header:hover {
+    color: var(--green);
+    text-shadow: 2px 2px 1px var(--white);
 }
 
 .text {
