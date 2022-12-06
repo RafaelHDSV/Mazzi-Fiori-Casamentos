@@ -97,3 +97,11 @@
 //         });
 //     }, 250);
 // });
+
+let header = document.querySelector('header')
+let sliderHeader = ['slider_header1.jpg', 'slider_header2.jpg', 'slider_header3.jpg', 'slider_header4.jpg', 'slider_header5.jpg']
+
+const loopSliderHeader = setInterval(() => {
+    header.style.backgroundImage = "url('images/casamento-feliz-um-guia-para-casamentos-felizes.png')"
+
+}, 5000)
