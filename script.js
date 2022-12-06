@@ -11,3 +11,10 @@ const loop = setInterval(() => {
 
     header.style.backgroundImage = `url("images/${sliderHeader[i]}")`
 }, 5000)
+
+var typed = new Typed('.auto_type', {
+    strings: ['MAGICO', 'INCRIVEL', 'INESQUECIVEL', 'INIMAGINAVEL', 'PERFEITO'],
+    typeSpeed: 150,
+    backSpeed: 150,
+    loop: true
+});
