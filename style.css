@@ -62,7 +62,7 @@ html {
 
 .item_header,
 .services_item,
-.img_services g,
+.img_services path,
 .services_item h3,
 .services_item p {
     cursor: pointer;
@@ -369,7 +369,7 @@ nav {
 }
 
 .services_item:hover,
-.services_item:hover .img_services g,
+.services_item:hover .img_services path,
 .services_item:hover h3,
 .services_item:hover p {
     color: var(--pink);
