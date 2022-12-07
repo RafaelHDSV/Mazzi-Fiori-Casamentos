@@ -299,7 +299,6 @@ nav {
     transform: skew(15deg) scale(80%);
 }
 
-/* CORRIGIR */
 .text_about_me {
     display: flex;
     justify-content: left;
