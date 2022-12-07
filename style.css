@@ -519,4 +519,9 @@ nav {
         padding: 2rem 0;
         gap: 3rem;
     }
+
+    .img_partners {
+        flex-direction: column;
+        gap: 4rem;
+    }
 }
