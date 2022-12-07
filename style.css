@@ -55,7 +55,9 @@ html {
 .title_container,
 .title_container_black,
 .img_services,
-.logo_about_me {
+.logo_about_me,
+.header_mobile,
+.items_container_mobile {
     cursor: pointer;
     transition: 1s all ease;
 }
@@ -145,6 +147,21 @@ nav {
     gap: 2rem;
 }
 
+.items_container_mobile {
+    list-style: none;
+    position: absolute;
+    top: 5.7rem;
+    right: .1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background-color: var(--pink);
+    padding: 2rem 3rem;
+    border-radius: 0 0 2rem 2rem;
+}
+
 .item_header {
     font-family: 'Sunflower', sans-serif;
     font-weight: 300;
@@ -160,6 +177,10 @@ nav {
 
 .header_mobile {
     display: none;
+}
+
+.header_mobile:hover path {
+    fill: var(--black);
 }
 
 .text {
@@ -386,6 +407,9 @@ nav {
 
     .header_mobile {
         display: flex;
+    }
+    .items_container_mobile {
+        display: none;
     }
 
     .main_services {
