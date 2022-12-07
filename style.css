@@ -101,7 +101,9 @@ nav {
 
 .item_header:hover {
     color: var(--green);
-    text-shadow: 0 0 20px var(--green);
+    text-shadow: 0 0 3px var(--green),
+        0 0 4px var(--dark_green),
+        0 0 5px var(--pink);
 }
 
 .header_mobile {
