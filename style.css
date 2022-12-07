@@ -483,5 +483,6 @@ nav {
         max-height: fit-content;
         height: 100%;
         padding: 2rem 0;
+        gap: 3rem;
     }
 }
