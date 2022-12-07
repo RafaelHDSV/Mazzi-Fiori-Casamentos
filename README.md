@@ -4,7 +4,7 @@
 ![GitHub language count](https://img.shields.io/github/languages/count/RafaelHDSV/Mazzi-Fiori-Casamentos?style=for-the-badge)
 ![GitHub forks](https://img.shields.io/github/forks/RafaelHDSV/Mazzi-Fiori-Casamentos?style=for-the-badge)
 
-<img src="images/desktop.png" alt="desktop.png">
+<img src="images/desktop_main.png" alt="desktop.png">
 
 > In this repository you will find a landing page for a wedding company, that is, a company that is responsible for the complete realization of the wedding, making the customer choose between the types of wedding and that's all.
 
