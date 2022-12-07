@@ -454,4 +454,11 @@ nav {
         line-height: normal;
         text-align: justify;
     }
+
+    .datas {
+        flex-direction: column;
+        justify-content: center;
+        max-height: 40rem;
+        height: 100vh;
+    }
 }
