@@ -480,6 +480,8 @@ nav {
     .datas {
         flex-direction: column;
         justify-content: center;
-        height: auto;
+        max-height: fit-content;
+        height: 100%;
+        padding: 2rem 0;
     }
 }
