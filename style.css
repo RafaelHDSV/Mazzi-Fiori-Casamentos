@@ -179,10 +179,6 @@ nav {
     display: none;
 }
 
-.header_mobile:hover path {
-    fill: var(--black);
-}
-
 .text {
     position: absolute;
     top: 50%;
@@ -408,6 +404,7 @@ nav {
     .header_mobile {
         display: flex;
     }
+
     .items_container_mobile {
         display: none;
     }
