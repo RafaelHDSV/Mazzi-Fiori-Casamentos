@@ -57,7 +57,8 @@ html {
 .img_services,
 .logo_about_me,
 .header_mobile,
-.items_container_mobile {
+.items_container_mobile,
+.img_partners img {
     cursor: pointer;
     transition: 1s all ease;
 }
@@ -76,7 +77,9 @@ html {
 .text p::selection,
 .text span::selection,
 .about_me p::selection,
-.title_container::selection {
+.title_container::selection,
+.datas_container span::selection,
+.datas_container p::selection {
     background-color: var(--white);
     color: var(--pink);
 }
@@ -431,6 +434,36 @@ nav {
     font-size: 48px;
     font-family: 'Great Vibes', cursive;
     text-align: center;
+}
+
+.partners {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: var(--black);
+    color: var(--white);
+    padding: 1rem 0 2rem 0;
+}
+
+.img_partners {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3rem 0;
+    width: 100%;
+}
+
+.img_partners img {
+    max-width: 10rem;
+    width: 100%;
+}
+
+.img_partners img:hover {
+    opacity: .25;
+    transform: scale(90%);
 }
 
 @media screen and (max-width: 768px) {
