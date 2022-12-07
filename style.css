@@ -405,10 +405,32 @@ nav {
     height: 100vh;
     width: 100%;
     color: var(--white);
+    font-size: 20px;
     font-family: 'Sunflower', sans-serif;
     font-weight: 500;
     text-align: center;
     text-transform: uppercase;
+}
+
+.datas_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.circle_data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid var(--white);
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    font-size: 48px;
+    font-family: 'Great Vibes', cursive;
+    text-align: center;
 }
 
 @media screen and (max-width: 768px) {
