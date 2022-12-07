@@ -13,7 +13,7 @@ const loop = setInterval(() => {
 }, 5000)
 
 const typed = new Typed('.auto_type', {
-    strings: ['Incrível', 'Mágico', 'Inimaginável', 'Perfeito', 'Inesquecível', 'Magnífico', 'Sensacional', 'Incomparável', 'Completo', 'Satisfatório'],
+    strings: ['Incrível', 'Mágico', 'Inimaginável', 'Inesquecível', 'Perfeito', 'Magnífico', 'Sensacional', 'Excepcional', 'Completo', 'Satisfatório'],
     typeSpeed: 150,
     backSpeed: 100,
     loop: true

@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+/* font-family: 'Great Vibes', cursive; */
+
+@import url('https://fonts.googleapis.com/css2?family=Sunflower:wght@300;500&display=swap');
+/* font-family: 'Sunflower', sans-serif; */
+
 :root {
     --white: #E8F1F2;
     --green: #529396;
@@ -5,10 +11,6 @@
     --dark_green: #273E47;
     --black: #171D26;
 }
-
-/* CORRIGIR */
-@import url('https://fonts.googleapis.com/css?family=Great+Vibes');
-/* font-family: 'Great Vibes', cursive; */
 
 * {
     padding: 0;
@@ -39,7 +41,6 @@ html {
     background-color: var(--black);
     width: 100%;
     height: 100vh;
-    /* CORRIGIR */
     opacity: 0.6;
 }
 
@@ -75,6 +76,7 @@ nav {
     max-width: 4.5rem;
     width: 100%;
     filter: invert(100%);
+    padding: .5rem 0;
 }
 
 .logo:hover {
@@ -91,14 +93,15 @@ nav {
 }
 
 .item_header {
+    font-family: 'Sunflower', sans-serif;
+    font-weight: 300;
     cursor: pointer;
     transition: .5s all ease;
 }
 
-/* CORRIGIR */
 .item_header:hover {
     color: var(--green);
-    text-shadow: 2px 2px 1px var(--white);
+    text-shadow: 0 0 20px var(--green);
 }
 
 .header_mobile {
@@ -119,15 +122,16 @@ nav {
 }
 
 .text h1 {
-    font-size: 36px;
+    font-size: 64px;
     font-family: 'Great Vibes', cursive;
     letter-spacing: .2rem;
     text-align: center;
 }
 
 .text p {
-    font-size: 18px;
-    font-family: 'Great Vibes', cursive;
+    font-size: 20px;
+    font-family: 'Sunflower', sans-serif;
+    font-weight: 300;
     text-align: center;
 }
 
@@ -140,14 +144,15 @@ nav {
     border: none;
     background-color: var(--green);
     color: var(--white);
-    max-width: 15rem;
+    max-width: 20rem;
     max-height: 3rem;
     width: 100%;
     height: 100vh;
     border-radius: 3rem;
     text-transform: uppercase;
-    font-size: 16px;
-    font-family: 'Great Vibes', cursive;
+    font-size: 18px;
+    font-family: 'Sunflower', sans-serif;
+    font-weight: 500;
 }
 
 .btn_primary:hover {
