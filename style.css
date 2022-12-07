@@ -28,6 +28,7 @@ body {
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
 }
 
 ::-webkit-scrollbar {
@@ -53,7 +54,8 @@ html {
 .btn_primary,
 .title_container,
 .title_container_black,
-.img_services {
+.img_services,
+.logo_about_me {
     cursor: pointer;
     transition: 1s all ease;
 }
@@ -65,6 +67,25 @@ html {
 .services_item p {
     cursor: pointer;
     transition: .5s all ease;
+}
+
+.item_header::selection,
+.text h1::selection,
+.text p::selection,
+.text span::selection,
+.about_me p::selection,
+.title_container::selection {
+    background-color: var(--white);
+    color: var(--pink);
+}
+
+.title_container_black::selection,
+.services_item::selection,
+.services_item h3::selection,
+.services_item p::selection {
+    background-color: var(--black);
+    color: var(--green);
+    fill: var(--green);
 }
 
 .filter {
@@ -258,25 +279,30 @@ nav {
     align-items: center;
     width: 100%;
     padding: 2rem 0;
+    gap: 10rem;
 }
 
 .logo_about_me {
     display: flex;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
     width: 50%;
     filter: invert(100%);
 }
 
 .logo_about_me img {
-    max-width: 25rem;
+    max-width: 30rem;
     width: 100%;
+}
+
+.logo_about_me:hover {
+    transform: skew(15deg) scale(80%);
 }
 
 /* CORRIGIR */
 .text_about_me {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     width: 50%;
 }
@@ -285,10 +311,11 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 30rem;
+    width: 40rem;
     font-size: 20px;
     font-family: 'Sunflower', sans-serif;
     font-weight: 300;
+    line-height: 2.8rem;
 }
 
 .services {
@@ -341,6 +368,7 @@ nav {
     text-align: center;
 }
 
+.services_item:hover,
 .services_item:hover .img_services g,
 .services_item:hover h3,
 .services_item:hover p {
