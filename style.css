@@ -53,10 +53,18 @@ html {
 .btn_primary,
 .title_container,
 .title_container_black,
-.services_item,
 .img_services {
     cursor: pointer;
     transition: 1s all ease;
+}
+
+.item_header,
+.services_item,
+.img_services g,
+.services_item h3,
+.services_item p {
+    cursor: pointer;
+    transition: .5s all ease;
 }
 
 .filter {
@@ -120,8 +128,6 @@ nav {
     font-family: 'Sunflower', sans-serif;
     font-weight: 300;
     color: var(--white);
-    cursor: pointer;
-    transition: .5s all ease;
 }
 
 .item_header:hover {
@@ -314,7 +320,9 @@ nav {
 
 .img_services {
     max-width: 7rem;
+    max-height: 7rem;
     width: 100%;
+    height: 100%;
 }
 
 .services_item h3 {
@@ -333,10 +341,11 @@ nav {
     text-align: center;
 }
 
-.services_item:hover .img_services,
+.services_item:hover .img_services g,
 .services_item:hover h3,
 .services_item:hover p {
     color: var(--pink);
+    fill: var(--pink);
 }
 
 @media screen and (max-width: 768px) {
@@ -350,5 +359,10 @@ nav {
 
     .header_mobile {
         display: flex;
+    }
+
+    .main_services {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
     }
 }
