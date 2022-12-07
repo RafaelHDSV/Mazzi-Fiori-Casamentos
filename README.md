@@ -51,5 +51,6 @@ Users should be able to:
 - HTML
 - CSS
 - JAVASCRIPT
+- TYPED LIB
 
 [⬆ Back to the top](#mazzi-fiori-casamentos)<br>
