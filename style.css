@@ -30,8 +30,28 @@ html {
     scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar {
+    width: 1rem;
+}
+
+
+::-webkit-scrollbar-track {
+    height: 1rem;
+    background: var(--black);
+}
+
+
+::-webkit-scrollbar-thumb {
+    background: var(--dark_green);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--green);
+}
+
 .logo,
-.btn_primary {
+.btn_primary,
+.title_container {
     cursor: pointer;
     transition: 1s all ease;
 }
@@ -58,6 +78,7 @@ header {
 }
 
 nav {
+    position: fixed;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -95,6 +116,7 @@ nav {
 .item_header {
     font-family: 'Sunflower', sans-serif;
     font-weight: 300;
+    color: var(--white);
     cursor: pointer;
     transition: .5s all ease;
 }
@@ -161,6 +183,45 @@ nav {
     transform: scale(110%);
     background-color: var(--pink);
     color: var(--white);
+}
+
+.about_me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.title_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    font-family: 'Sunflower', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    color: var(--white);
+    padding: 2rem 0 .5rem 0;
+    border-bottom: 1px solid var(--white);
+}
+
+.title_container:hover {
+    color: var(--green);
+    text-shadow: 0 0 3px var(--green),
+        0 0 4px var(--dark_green),
+        0 0 5px var(--pink);
+    border-color: var(--green);
+    transform: scale(120%);
+}
+
+.logo_about_me {
+    max-width: 25rem;
+    width: 100%;
+    filter: invert(100%);
 }
 
 @media screen and (max-width: 768px) {
