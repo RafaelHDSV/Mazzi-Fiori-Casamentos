@@ -52,5 +52,6 @@ Users should be able to:
 - CSS
 - JAVASCRIPT
 - TYPED LIB
+- PROGRESS-BAR LIB
 
 [⬆ Back to the top](#mazzi-fiori-casamentos)<br>
