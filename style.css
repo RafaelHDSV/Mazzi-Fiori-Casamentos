@@ -78,7 +78,6 @@ html {
 .text span::selection,
 .about_me p::selection,
 .title_container::selection,
-.datas_container span::selection,
 .datas_container p::selection {
     background-color: var(--white);
     color: var(--pink);
@@ -433,6 +432,7 @@ nav {
     font-size: 48px;
     font-family: 'Great Vibes', cursive;
     text-align: center;
+    user-select: none;
 }
 
 .partners {

@@ -50,7 +50,7 @@ window.onload = function onLoad() {
             circle.setText(value);
         }
     });
-    circleA.animate(1);
+    // circleA.animate(1);
 
     var circleB = new ProgressBar.Circle('#circleB', {
         color: '#E8F1F2',
@@ -68,7 +68,7 @@ window.onload = function onLoad() {
             circle.setText(value);
         }
     });
-    circleB.animate(1);
+    // circleB.animate(1);
 
     var circleC = new ProgressBar.Circle('#circleC', {
         color: '#E8F1F2',
@@ -86,7 +86,7 @@ window.onload = function onLoad() {
             circle.setText(value);
         }
     });
-    circleC.animate(1);
+    // circleC.animate(1);
 
     var circleD = new ProgressBar.Circle('#circleD', {
         color: '#E8F1F2',
@@ -104,5 +104,18 @@ window.onload = function onLoad() {
             circle.setText(value);
         }
     });
-    circleD.animate(1);
+    // circleD.animate(1);
+
+
+    setInterval(() => {
+        let windowPosition = window.scrollY
+        console.log(windowPosition);
+
+        if (windowPosition >= 1600 && windowPosition <= 1800) {
+            circleA.animate(1);
+            circleB.animate(1);
+            circleC.animate(1);
+            circleD.animate(1);
+        }
+    }, 10)
 };
