@@ -105,20 +105,4 @@ window.onload = function onLoad() {
         }
     });
     circleD.animate(1);
-
-    // let dataPosition = datas.offsetTop
-    // let stop = 0;
-
-    // $(window).scroll(function (e) {
-    //     let scroll = $(window).scrollTop();
-
-    //     if (scroll > (dataPosition - 500) && stop == 0) {
-    // circleA.animate(1);
-    // circleB.animate(1);
-    // circleC.animate(1);
-    // circleD.animate(1);
-
-    //         stop = 1;
-    //     }
-    // });
 };
