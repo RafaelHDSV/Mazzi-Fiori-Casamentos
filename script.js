@@ -3,6 +3,14 @@ let itemsMobile = document.querySelector('.items_container_mobile')
 let hamburguer = document.getElementById('hamburguer')
 let hamburguerPath = document.getElementById('hamburguer_path')
 let datas = document.getElementById('datas')
+let dots = document.getElementById('dots')
+let quant = document.querySelectorAll('.imageSlider')
+let current = 0
+let imageSlider = document.getElementById('imageSlider')
+let prev = document.getElementById('prev')
+let next = document.getElementById('next')
+let scrollSlider = true
+let positionSlider = document.querySelectorAll('.dots div')
 let sliderHeader = ['slider_header1.jpg', 'slider_header2.jpg', 'slider_header3.jpg', 'slider_header4.jpg', 'slider_header5.jpg']
 let i = 0
 
@@ -50,7 +58,6 @@ window.onload = function onLoad() {
             circle.setText(value);
         }
     });
-    // circleA.animate(1);
 
     var circleB = new ProgressBar.Circle('#circleB', {
         color: '#E8F1F2',
@@ -68,7 +75,6 @@ window.onload = function onLoad() {
             circle.setText(value);
         }
     });
-    // circleB.animate(1);
 
     var circleC = new ProgressBar.Circle('#circleC', {
         color: '#E8F1F2',
@@ -86,7 +92,6 @@ window.onload = function onLoad() {
             circle.setText(value);
         }
     });
-    // circleC.animate(1);
 
     var circleD = new ProgressBar.Circle('#circleD', {
         color: '#E8F1F2',
@@ -104,12 +109,10 @@ window.onload = function onLoad() {
             circle.setText(value);
         }
     });
-    // circleD.animate(1);
 
 
     setInterval(() => {
         let windowPosition = window.scrollY
-        console.log(windowPosition);
 
         if (windowPosition >= 1600 && windowPosition <= 1800) {
             circleA.animate(1);
@@ -119,3 +122,53 @@ window.onload = function onLoad() {
         }
     }, 10)
 };
+
+// SLIDER
+for (let i = 0; i < quant.length; i++) {
+    let div = document.createElement('div')
+    div.id = i
+    dots.appendChild(div)
+}
+
+document.getElementById('0').classList.add('imgAtual')
+
+for (let i2 = 0; i2 < positionSlider.length; i2++) {
+    positionSlider[i].addEventListener('click', () => {
+        current = positionSlider[i].id
+        scrollSlider = false
+        slider()
+    })
+}
+
+prev.addEventListener('click', () => {
+    current--
+    scrollSlider = false
+    slider()
+})
+
+next.addEventListener('click', () => {
+    current++
+    scrollSlider = false
+    slider()
+})
+
+function slider() {
+    if (current >= quant.length) {
+        current = 0
+    } else if (current < 0) {
+        current = quant.length - 1
+    }
+
+    document.querySelector('.imgAtual').classList.remove('imgAtual')
+    imageSlider.style.marginLeft = -30 * current + 'rem'
+    document.getElementById(current).classList.add('imgAtual')
+}
+
+setInterval(() => {
+    if (scrollSlider) {
+        current++
+        slider()
+    } else {
+        scrollSlider = true
+    }
+}, 4000)
