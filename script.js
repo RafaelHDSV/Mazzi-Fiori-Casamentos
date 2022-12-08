@@ -2,17 +2,16 @@ let header = document.querySelector('header')
 let itemsMobile = document.querySelector('.items_container_mobile')
 let hamburguer = document.getElementById('hamburguer')
 let hamburguerPath = document.getElementById('hamburguer_path')
+let sliderHeader = ['slider_header1.jpg', 'slider_header2.jpg', 'slider_header3.jpg', 'slider_header4.jpg', 'slider_header5.jpg']
+let i = 0
 let datas = document.getElementById('datas')
 let dots = document.getElementById('dots')
-let quant = document.querySelectorAll('.imageSlider')
-let current = 0
-let imageSlider = document.getElementById('imageSlider')
+let quant = document.querySelectorAll('.image')
+let imageSlider = document.getElementById('image')
 let prev = document.getElementById('prev')
 let next = document.getElementById('next')
 let scrollSlider = true
-let positionSlider = document.querySelectorAll('.dots div')
-let sliderHeader = ['slider_header1.jpg', 'slider_header2.jpg', 'slider_header3.jpg', 'slider_header4.jpg', 'slider_header5.jpg']
-let i = 0
+let current = 0
 
 const loop = setInterval(() => {
     i += 1
@@ -132,9 +131,11 @@ for (let i = 0; i < quant.length; i++) {
 
 document.getElementById('0').classList.add('imgAtual')
 
+let positionSlider = document.querySelectorAll('.dots div')
+
 for (let i2 = 0; i2 < positionSlider.length; i2++) {
-    positionSlider[i].addEventListener('click', () => {
-        current = positionSlider[i].id
+    positionSlider[i2].addEventListener('click', () => {
+        current = positionSlider[i2].id
         scrollSlider = false
         slider()
     })
