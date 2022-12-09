@@ -87,7 +87,11 @@ html {
 .next4,
 .prev4,
 .dots4 div,
-.imgAtual4 {
+.imgAtual4,
+.next5,
+.prev5,
+.dots5 div,
+.imgAtual5 {
     cursor: pointer;
     transition: .5s all ease;
 }
@@ -479,7 +483,8 @@ nav {
 .card1,
 .card2,
 .card3,
-.card4 {
+.card4,
+.card5 {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -491,7 +496,8 @@ nav {
 .image_card1,
 .image_card2,
 .image_card3,
-.image_card4 {
+.image_card4,
+.image_card5 {
     display: flex;
     flex-direction: row;
     max-width: 30rem;
@@ -507,7 +513,8 @@ nav {
 .slider1,
 .slider2,
 .slider3,
-.slider4 {
+.slider4,
+.slider5 {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -517,7 +524,8 @@ nav {
 .image1 img,
 .image2 img,
 .image3 img,
-.image4 img {
+.image4 img,
+.image5 img {
     max-width: 30rem;
     max-height: 20rem;
     width: 100vh;
@@ -530,7 +538,8 @@ nav {
 .next1,
 .next2,
 .next3,
-.next4 {
+.next4,
+.next5 {
     position: absolute;
     right: 1rem;
     top: 50%;
@@ -540,7 +549,8 @@ nav {
 .prev1,
 .prev2,
 .prev3,
-.prev4 {
+.prev4,
+.prev5 {
     position: absolute;
     left: 1rem;
     top: 50%;
@@ -565,7 +575,11 @@ nav {
 .prev4::before,
 .prev4::after,
 .next4::before,
-.next4::after {
+.next4::after,
+.prev5::before,
+.prev5::after,
+.next5::before,
+.next5::after {
     content: "";
     display: flex;
     justify-content: center;
@@ -585,7 +599,9 @@ nav {
 .prev3::after,
 .next3::after,
 .prev4::after,
-.next4::after {
+.next4::after,
+.prev5::after,
+.next5::after {
     transform: rotate(45deg);
 }
 
@@ -598,7 +614,9 @@ nav {
 .prev3::before,
 .next3::before,
 .prev4::before,
-.next4::before {
+.next4::before,
+.prev5::before,
+.next5::before {
     transform: rotate(-45deg);
 }
 
@@ -606,7 +624,8 @@ nav {
 .next1,
 .next2,
 .next3,
-.next4 {
+.next4,
+.next5 {
     transform: rotate(180deg);
 }
 
@@ -619,7 +638,9 @@ nav {
 .next3:hover,
 .prev3:hover,
 .next4:hover,
-.prev4:hover {
+.prev4:hover,
+.next5:hover,
+.prev5:hover {
     opacity: .7;
 }
 
@@ -627,7 +648,8 @@ nav {
 .dots1,
 .dots2,
 .dots3,
-.dots4 {
+.dots4,
+.dots5 {
     position: absolute;
     bottom: 1rem;
     left: 50%;
@@ -641,7 +663,8 @@ nav {
 .dots1 div,
 .dots2 div,
 .dots3 div,
-.dots4 div {
+.dots4 div,
+.dots5 div {
     border: 3px solid var(--dark_green);
     padding: .3rem;
     border-radius: 50%;
@@ -656,7 +679,9 @@ nav {
 .dots3 div:hover,
 .imgAtual3,
 .dots4 div:hover,
-.imgAtual4 {
+.imgAtual4,
+.dots5 div:hover,
+.imgAtual5 {
     background-color: var(--green);
 }
 
