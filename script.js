@@ -414,3 +414,63 @@ setInterval(() => {
         scrollSlider4 = true
     }
 }, 4000)
+
+// SLIDER 5
+let dots5 = document.getElementById('dots5')
+let quant5 = document.querySelectorAll('.image5')
+let imageSlider5 = document.getElementById('image5')
+let prev5 = document.getElementById('prev5')
+let next5 = document.getElementById('next5')
+let scrollSlider5 = true
+let current5 = 25
+
+for (let i11 = 0; i11 < quant5.length; i11++) {
+    let div5 = document.createElement('div')
+    div5.id = i11 + 25
+    dots5.appendChild(div5)
+}
+
+document.getElementById('25').classList.add('imgAtual5')
+
+let positionSlider5 = document.querySelectorAll('.dots5 div')
+
+for (let i12 = 0; i12 < positionSlider5.length; i12++) {
+    positionSlider5[i12].addEventListener('click', () => {
+        current5 = positionSlider5[i12].id
+        scrollSlider5 = false
+        slider5()
+    })
+}
+
+prev5.addEventListener('click', () => {
+    current5--
+    scrollSlider5 = false
+    slider5()
+})
+
+next5.addEventListener('click', () => {
+    current5++
+    scrollSlider5 = false
+    slider5()
+})
+
+function slider5() {
+    if (current5 >= 25 + (quant5.length)) {
+        current5 = 25
+    } else if (current5 < 25) {
+        current5 = 25 + (quant5.length) - 1
+    }
+
+    document.querySelector('.imgAtual5').classList.remove('imgAtual5')
+    imageSlider5.style.marginLeft = -30 * (current5 - 25) + 'rem'
+    document.getElementById(current5).classList.add('imgAtual5')
+}
+
+setInterval(() => {
+    if (scrollSlider5) {
+        current5++
+        slider5()
+    } else {
+        scrollSlider5 = true
+    }
+}, 4000)
