@@ -58,7 +58,8 @@ html {
 .logo_about_me,
 .header_mobile,
 .items_container_mobile,
-.img_partners img {
+.img_partners img,
+.buttons button {
     cursor: pointer;
     transition: 1s all ease;
 }
@@ -114,7 +115,8 @@ html {
 .text span::selection,
 .about_me p::selection,
 .title_container::selection,
-.datas_container p::selection {
+.datas_container p::selection,
+.buttons button::selection {
     background-color: var(--white);
     color: var(--pink);
 }
@@ -122,7 +124,8 @@ html {
 .title_container_black::selection,
 .services_item::selection,
 .services_item h3::selection,
-.services_item p::selection {
+.services_item p::selection,
+.text_card p::selection {
     background-color: var(--black);
     color: var(--green);
     fill: var(--green);
@@ -525,6 +528,7 @@ nav {
     border-radius: 1rem 1rem 0 0;
     overflow: hidden;
     position: relative;
+    user-select: none;
 }
 
 .slider,
@@ -765,12 +769,60 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
     padding: 1rem 0;
     width: 100%;
     background-color: var(--white);
     color: var(--black);
     border-radius: 0 0 1rem 1rem;
+}
+
+.text_card p {
+    color: var(--black);
+    font-size: 15px;
+    font-family: 'Sunflower', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+}
+
+.buttons button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    outline: 0;
+    border: none;
+    background-color: var(--green);
+    color: var(--white);
+    max-height: 3rem;
+    width: 100%;
+    height: 100vh;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: 'Sunflower', sans-serif;
+    font-weight: 500;
+}
+
+.buttons button:nth-child(1) {
+    border-radius: 3rem 0 0 3rem;
+}
+
+.buttons button:nth-child(2) {
+    border-radius: 0 3rem 3rem 0;
+}
+
+.buttons button:hover {
+    background-color: var(--dark_green);
 }
 
 .partners {
@@ -801,4 +853,15 @@ nav {
 .img_partners img:hover {
     opacity: .25;
     transform: scale(90%);
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: var(--black);
+    color: var(--white);
+    padding: 1rem 0 2rem 0;
 }
