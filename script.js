@@ -354,3 +354,63 @@ setInterval(() => {
         scrollSlider3 = true
     }
 }, 4000)
+
+// SLIDER 4
+let dots4 = document.getElementById('dots4')
+let quant4 = document.querySelectorAll('.image4')
+let imageSlider4 = document.getElementById('image4')
+let prev4 = document.getElementById('prev4')
+let next4 = document.getElementById('next4')
+let scrollSlider4 = true
+let current4 = 20
+
+for (let i9 = 0; i9 < quant4.length; i9++) {
+    let div4 = document.createElement('div')
+    div4.id = i9 + 20
+    dots4.appendChild(div4)
+}
+
+document.getElementById('20').classList.add('imgAtual4')
+
+let positionSlider4 = document.querySelectorAll('.dots4 div')
+
+for (let i10 = 0; i10 < positionSlider4.length; i10++) {
+    positionSlider4[i10].addEventListener('click', () => {
+        current4 = positionSlider4[i10].id
+        scrollSlider4 = false
+        slider4()
+    })
+}
+
+prev4.addEventListener('click', () => {
+    current4--
+    scrollSlider4 = false
+    slider4()
+})
+
+next4.addEventListener('click', () => {
+    current4++
+    scrollSlider4 = false
+    slider4()
+})
+
+function slider4() {
+    if (current4 >= 20 + (quant4.length)) {
+        current4 = 20
+    } else if (current4 < 20) {
+        current4 = 20 + (quant4.length) - 1
+    }
+
+    document.querySelector('.imgAtual4').classList.remove('imgAtual4')
+    imageSlider4.style.marginLeft = -30 * (current4 - 20) + 'rem'
+    document.getElementById(current4).classList.add('imgAtual4')
+}
+
+setInterval(() => {
+    if (scrollSlider4) {
+        current4++
+        slider4()
+    } else {
+        scrollSlider4 = true
+    }
+}, 4000)
