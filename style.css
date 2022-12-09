@@ -79,7 +79,11 @@ html {
 .next2,
 .prev2,
 .dots2 div,
-.imgAtual2 {
+.imgAtual2,
+.next3,
+.prev3,
+.dots3 div,
+.imgAtual3 {
     cursor: pointer;
     transition: .5s all ease;
 }
@@ -469,7 +473,8 @@ nav {
 
 .card,
 .card1,
-.card2 {
+.card2,
+.card3 {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -479,7 +484,8 @@ nav {
 
 .image_card,
 .image_card1,
-.image_card2 {
+.image_card2,
+.image_card3 {
     display: flex;
     flex-direction: row;
     max-width: 30rem;
@@ -493,7 +499,8 @@ nav {
 
 .slider,
 .slider1,
-.slider2 {
+.slider2,
+.slider3 {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -501,7 +508,8 @@ nav {
 
 .image img,
 .image1 img,
-.image2 img {
+.image2 img,
+.image3 img {
     max-width: 30rem;
     max-height: 20rem;
     width: 100vh;
@@ -512,7 +520,8 @@ nav {
 
 .next,
 .next1,
-.next2 {
+.next2,
+.next3 {
     position: absolute;
     right: 1rem;
     top: 50%;
@@ -520,7 +529,8 @@ nav {
 
 .prev,
 .prev1,
-.prev2 {
+.prev2,
+.prev3 {
     position: absolute;
     left: 1rem;
     top: 50%;
@@ -537,7 +547,11 @@ nav {
 .prev2::before,
 .prev2::after,
 .next2::before,
-.next2::after {
+.next2::after,
+.prev3::before,
+.prev3::after,
+.next3::before,
+.next3::after {
     content: "";
     display: flex;
     justify-content: center;
@@ -553,7 +567,9 @@ nav {
 .prev1::after,
 .next1::after,
 .prev2::after,
-.next2::after {
+.next2::after,
+.prev3::after,
+.next3::after {
     transform: rotate(45deg);
 }
 
@@ -562,13 +578,16 @@ nav {
 .prev1::before,
 .next1::before,
 .prev2::before,
-.next2::before {
+.next2::before,
+.prev3::before,
+.next3::before {
     transform: rotate(-45deg);
 }
 
 .next,
 .next1,
-.next2 {
+.next2,
+.next3 {
     transform: rotate(180deg);
 }
 
@@ -577,13 +596,16 @@ nav {
 .next1:hover,
 .prev1:hover,
 .next2:hover,
-.prev2:hover {
+.prev2:hover,
+.next3:hover,
+.prev3:hover {
     opacity: .7;
 }
 
 .dots,
 .dots1,
-.dots2 {
+.dots2,
+.dots3 {
     position: absolute;
     bottom: 1rem;
     left: 50%;
@@ -595,7 +617,8 @@ nav {
 
 .dots div,
 .dots1 div,
-.dots2 div {
+.dots2 div,
+.dots3 div {
     border: 3px solid var(--dark_green);
     padding: .3rem;
     border-radius: 50%;
@@ -606,7 +629,9 @@ nav {
 .dots1 div:hover,
 .imgAtual1,
 .dots2 div:hover,
-.imgAtual2 {
+.imgAtual2,
+.dots3 div:hover,
+.imgAtual3 {
     background-color: var(--green);
 }
 
