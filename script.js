@@ -5,13 +5,6 @@ let hamburguerPath = document.getElementById('hamburguer_path')
 let sliderHeader = ['slider_header1.jpg', 'slider_header2.jpg', 'slider_header3.jpg', 'slider_header4.jpg', 'slider_header5.jpg']
 let i = 0
 let datas = document.getElementById('datas')
-let dots = document.getElementById('dots')
-let quant = document.querySelectorAll('.image')
-let imageSlider = document.getElementById('image')
-let prev = document.getElementById('prev')
-let next = document.getElementById('next')
-let scrollSlider = true
-let current = 0
 
 const loop = setInterval(() => {
     i += 1
@@ -123,6 +116,14 @@ window.onload = function onLoad() {
 };
 
 // SLIDER
+let dots = document.getElementById('dots')
+let quant = document.querySelectorAll('.image')
+let imageSlider = document.getElementById('image')
+let prev = document.getElementById('prev')
+let next = document.getElementById('next')
+let scrollSlider = true
+let current = 0
+
 for (let i = 0; i < quant.length; i++) {
     let div = document.createElement('div')
     div.id = i
@@ -171,5 +172,65 @@ setInterval(() => {
         slider()
     } else {
         scrollSlider = true
+    }
+}, 4000)
+
+// SLIDER 1
+let dots1 = document.getElementById('dots1')
+let quant1 = document.querySelectorAll('.image1')
+let imageSlider1 = document.getElementById('image1')
+let prev1 = document.getElementById('prev1')
+let next1 = document.getElementById('next1')
+let scrollSlider1 = true
+let current1 = 5
+
+for (let i3 = 0; i3 < quant1.length; i3++) {
+    let div1 = document.createElement('div')
+    div1.id = i3 + 5
+    dots1.appendChild(div1)
+}
+
+document.getElementById('5').classList.add('imgAtual1')
+
+let positionSlider1 = document.querySelectorAll('.dots1 div')
+
+for (let i4 = 0; i4 < positionSlider1.length; i4++) {
+    positionSlider1[i4].addEventListener('click', () => {
+        current1 = positionSlider1[i4].id
+        scrollSlider1 = false
+        slider1()
+    })
+}
+
+prev1.addEventListener('click', () => {
+    current1--
+    scrollSlider1 = false
+    slider1()
+})
+
+next1.addEventListener('click', () => {
+    current1++
+    scrollSlider1 = false
+    slider1()
+})
+
+function slider1() {
+    if (current1 >= 5 + (quant1.length)) {
+        current1 = 5
+    } else if (current1 < 5) {
+        current1 = 5 + (quant1.length) - 1
+    }
+
+    document.querySelector('.imgAtual1').classList.remove('imgAtual1')
+    imageSlider1.style.marginLeft = -30 * (current1 - 5) + 'rem'
+    document.getElementById(current1).classList.add('imgAtual1')
+}
+
+setInterval(() => {
+    if (scrollSlider1) {
+        current1++
+        slider1()
+    } else {
+        scrollSlider1 = true
     }
 }, 4000)
