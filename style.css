@@ -459,17 +459,17 @@ nav {
     padding: 4rem 0;
 }
 
-.card {
+.card,
+.card1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* CORRIGIR */
-    border: 3px solid var(--dark_green);
     border-radius: 1rem;
 }
 
-.image_card {
+.image_card,
+.image_card1 {
     display: flex;
     flex-direction: row;
     max-width: 30rem;
@@ -481,13 +481,15 @@ nav {
     position: relative;
 }
 
-.slider {
+.slider,
+.slider1 {
     display: flex;
     flex-direction: row;
     width: 100%;
 }
 
-.image img {
+.image img,
+.image1 img {
     max-width: 30rem;
     max-height: 20rem;
     width: 100vh;
@@ -496,13 +498,15 @@ nav {
     border-radius: 1rem 1rem 0 0;
 }
 
-.next {
+.next,
+.next1 {
     position: absolute;
     right: 1rem;
     top: 50%;
 }
 
-.prev {
+.prev,
+.prev1 {
     position: absolute;
     left: 1rem;
     top: 50%;
@@ -511,7 +515,11 @@ nav {
 .prev::before,
 .prev::after,
 .next::before,
-.next::after {
+.next::after,
+.prev1::before,
+.prev1::after,
+.next1::before,
+.next1::after {
     content: "";
     display: flex;
     justify-content: center;
@@ -523,25 +531,33 @@ nav {
 }
 
 .prev::after,
-.next::after {
+.next::after,
+.prev1::after,
+.next1::after {
     transform: rotate(45deg);
 }
 
 .prev::before,
-.next::before {
+.next::before,
+.prev1::before,
+.next1::before {
     transform: rotate(-45deg);
 }
 
-.next {
+.next,
+.next1 {
     transform: rotate(180deg);
 }
 
 .next:hover,
-.prev:hover {
+.prev:hover,
+.next1:hover,
+.prev1:hover {
     opacity: .4;
 }
 
-.dots {
+.dots,
+.dots1 {
     position: absolute;
     bottom: 1rem;
     left: 50%;
@@ -551,14 +567,17 @@ nav {
     gap: 1rem;
 }
 
-.dots div {
+.dots div,
+.dots1 div {
     border: 3px solid var(--dark_green);
     padding: .3rem;
     border-radius: 50%;
 }
 
 .dots div:hover,
-.imgAtual {
+.imgAtual,
+.dots1 div:hover,
+.imgAtual1 {
     background-color: var(--green);
 }
 
