@@ -594,3 +594,63 @@ setInterval(() => {
         scrollSlider7 = true
     }
 }, 4000)
+
+// SLIDER 8
+let dots8 = document.getElementById('dots8')
+let quant8 = document.querySelectorAll('.image8')
+let imageSlider8 = document.getElementById('image8')
+let prev8 = document.getElementById('prev8')
+let next8 = document.getElementById('next8')
+let scrollSlider8 = true
+let current8 = 40
+
+for (let i17 = 0; i17 < quant8.length; i17++) {
+    let div8 = document.createElement('div')
+    div8.id = i17 + 40
+    dots8.appendChild(div8)
+}
+
+document.getElementById('40').classList.add('imgAtual8')
+
+let positionSlider8 = document.querySelectorAll('.dots8 div')
+
+for (let i18 = 0; i18 < positionSlider8.length; i18++) {
+    positionSlider8[i18].addEventListener('click', () => {
+        current8 = positionSlider8[i18].id
+        scrollSlider8 = false
+        slider8()
+    })
+}
+
+prev8.addEventListener('click', () => {
+    current8--
+    scrollSlider8 = false
+    slider8()
+})
+
+next8.addEventListener('click', () => {
+    current8++
+    scrollSlider8 = false
+    slider8()
+})
+
+function slider8() {
+    if (current8 >= 40 + (quant8.length)) {
+        current8 = 40
+    } else if (current8 < 40) {
+        current8 = 40 + (quant8.length) - 1
+    }
+
+    document.querySelector('.imgAtual8').classList.remove('imgAtual8')
+    imageSlider8.style.marginLeft = -30 * (current8 - 40) + 'rem'
+    document.getElementById(current8).classList.add('imgAtual8')
+}
+
+setInterval(() => {
+    if (scrollSlider8) {
+        current8++
+        slider8()
+    } else {
+        scrollSlider8 = true
+    }
+}, 4000)
