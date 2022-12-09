@@ -607,24 +607,34 @@
     <div id="contact" class="contact">
         <h2 class="title_container">Contato</h2>
 
-        <form action="">
-            <div class="mb-3 mt-3">
-                <label for="comment" class="form-label">Nome:</label>
-                <input type="comment" class="form-control" id="email" placeholder="Entre com nome" name="email">
+        <div class="form">
+            <div class="name">
+                <label for="name">Nome: </label>
+                <input type="text" id="name" name="name" placeholder="Entre com seu nome...">
             </div>
 
-            <div class="mb-3">
-                <label for="email" class="form-label">Email:</label>
-                <input type="email" class="form-control" id="email" placeholder="Entre com email" name="email">
+            <div class="email">
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email" placeholder="Entre com seu email...">
             </div>
 
-            <div class="mb-3">
-                <label for="comment" clss="form-label">Mensagem:</label>
-                <textarea class="form-control" rows="5" id="comment" placeholder="Entre com mensagem"
-                    name="text"></textarea>
+            <div class="phone">
+                <label for="phone">Telefone: </label>
+                <input type="phone" id="phone" name="phone" placeholder="Entre com seu telefone...">
             </div>
-            <button type="submit" class="btn btn-primary footer-btn">Enviar</button>
-        </form>
+
+            <div class="wedding">
+                <label for="wedding">Casamento Escolhido: </label>
+                <input type="" id="wedding" name="wedding">
+            </div>
+
+            <div class="mensagem">
+                <label for="mensagem">Mensagem:</label>
+                <textarea rows="5" id="mensagem" name="mensagem" placeholder="Entre com sua mensagem..."></textarea>
+            </div>
+
+            <button class="btn_primary">Enviar</button>
+        </div>
     </div>
 
     <!--<footer class="col-12">

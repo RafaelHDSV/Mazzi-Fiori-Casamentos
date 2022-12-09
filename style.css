@@ -865,3 +865,12 @@ nav {
     color: var(--white);
     padding: 1rem 0 2rem 0;
 }
+
+/* CORRIGIR */
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2weddingrem 0;
+}
