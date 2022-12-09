@@ -91,7 +91,15 @@ html {
 .next5,
 .prev5,
 .dots5 div,
-.imgAtual5 {
+.imgAtual5,
+.next6,
+.prev6,
+.dots6 div,
+.imgAtual6,
+.next7,
+.prev7,
+.dots7 div,
+.imgAtual7 {
     cursor: pointer;
     transition: .5s all ease;
 }
@@ -484,7 +492,9 @@ nav {
 .card2,
 .card3,
 .card4,
-.card5 {
+.card5,
+.card6,
+.card7 {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -497,7 +507,9 @@ nav {
 .image_card2,
 .image_card3,
 .image_card4,
-.image_card5 {
+.image_card5,
+.image_card6,
+.image_card7 {
     display: flex;
     flex-direction: row;
     max-width: 30rem;
@@ -514,7 +526,9 @@ nav {
 .slider2,
 .slider3,
 .slider4,
-.slider5 {
+.slider5,
+.slider6,
+.slider7 {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -525,7 +539,9 @@ nav {
 .image2 img,
 .image3 img,
 .image4 img,
-.image5 img {
+.image5 img,
+.image6 img,
+.image7 img {
     max-width: 30rem;
     max-height: 20rem;
     width: 100vh;
@@ -539,7 +555,9 @@ nav {
 .next2,
 .next3,
 .next4,
-.next5 {
+.next5,
+.next6,
+.next7 {
     position: absolute;
     right: 1rem;
     top: 50%;
@@ -550,7 +568,9 @@ nav {
 .prev2,
 .prev3,
 .prev4,
-.prev5 {
+.prev5,
+.prev6,
+.prev7 {
     position: absolute;
     left: 1rem;
     top: 50%;
@@ -579,7 +599,15 @@ nav {
 .prev5::before,
 .prev5::after,
 .next5::before,
-.next5::after {
+.next5::after,
+.prev6::before,
+.prev6::after,
+.next6::before,
+.next6::after,
+.prev7::before,
+.prev7::after,
+.next7::before,
+.next7::after {
     content: "";
     display: flex;
     justify-content: center;
@@ -601,7 +629,11 @@ nav {
 .prev4::after,
 .next4::after,
 .prev5::after,
-.next5::after {
+.next5::after,
+.prev6::after,
+.next6::after,
+.prev7::after,
+.next7::after {
     transform: rotate(45deg);
 }
 
@@ -616,7 +648,11 @@ nav {
 .prev4::before,
 .next4::before,
 .prev5::before,
-.next5::before {
+.next5::before,
+.prev6::before,
+.next6::before,
+.prev7::before,
+.next7::before {
     transform: rotate(-45deg);
 }
 
@@ -625,7 +661,9 @@ nav {
 .next2,
 .next3,
 .next4,
-.next5 {
+.next5,
+.next6,
+.next7 {
     transform: rotate(180deg);
 }
 
@@ -640,7 +678,11 @@ nav {
 .next4:hover,
 .prev4:hover,
 .next5:hover,
-.prev5:hover {
+.prev5:hover,
+.next6:hover,
+.prev6:hover,
+.next7:hover,
+.prev7:hover {
     opacity: .7;
 }
 
@@ -649,7 +691,9 @@ nav {
 .dots2,
 .dots3,
 .dots4,
-.dots5 {
+.dots5,
+.dots6,
+.dots7 {
     position: absolute;
     bottom: 1rem;
     left: 50%;
@@ -664,7 +708,9 @@ nav {
 .dots2 div,
 .dots3 div,
 .dots4 div,
-.dots5 div {
+.dots5 div,
+.dots6 div,
+.dots7 div {
     border: 3px solid var(--dark_green);
     padding: .3rem;
     border-radius: 50%;
@@ -681,7 +727,11 @@ nav {
 .dots4 div:hover,
 .imgAtual4,
 .dots5 div:hover,
-.imgAtual5 {
+.imgAtual5,
+.dots6 div:hover,
+.imgAtual6,
+.dots7 div:hover,
+.imgAtual7 {
     background-color: var(--green);
 }
 
