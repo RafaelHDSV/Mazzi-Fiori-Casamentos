@@ -474,3 +474,123 @@ setInterval(() => {
         scrollSlider5 = true
     }
 }, 4000)
+
+// SLIDER 6
+let dots6 = document.getElementById('dots6')
+let quant6 = document.querySelectorAll('.image6')
+let imageSlider6 = document.getElementById('image6')
+let prev6 = document.getElementById('prev6')
+let next6 = document.getElementById('next6')
+let scrollSlider6 = true
+let current6 = 30
+
+for (let i13 = 0; i13 < quant6.length; i13++) {
+    let div6 = document.createElement('div')
+    div6.id = i13 + 30
+    dots6.appendChild(div6)
+}
+
+document.getElementById('30').classList.add('imgAtual6')
+
+let positionSlider6 = document.querySelectorAll('.dots6 div')
+
+for (let i14 = 0; i14 < positionSlider6.length; i14++) {
+    positionSlider6[i14].addEventListener('click', () => {
+        current6 = positionSlider6[i14].id
+        scrollSlider6 = false
+        slider6()
+    })
+}
+
+prev6.addEventListener('click', () => {
+    current6--
+    scrollSlider6 = false
+    slider6()
+})
+
+next6.addEventListener('click', () => {
+    current6++
+    scrollSlider6 = false
+    slider6()
+})
+
+function slider6() {
+    if (current6 >= 30 + (quant6.length)) {
+        current6 = 30
+    } else if (current6 < 30) {
+        current6 = 30 + (quant6.length) - 1
+    }
+
+    document.querySelector('.imgAtual6').classList.remove('imgAtual6')
+    imageSlider6.style.marginLeft = -30 * (current6 - 30) + 'rem'
+    document.getElementById(current6).classList.add('imgAtual6')
+}
+
+setInterval(() => {
+    if (scrollSlider6) {
+        current6++
+        slider6()
+    } else {
+        scrollSlider6 = true
+    }
+}, 4000)
+
+// SLIDER 7
+let dots7 = document.getElementById('dots7')
+let quant7 = document.querySelectorAll('.image7')
+let imageSlider7 = document.getElementById('image7')
+let prev7 = document.getElementById('prev7')
+let next7 = document.getElementById('next7')
+let scrollSlider7 = true
+let current7 = 35
+
+for (let i15 = 0; i15 < quant7.length; i15++) {
+    let div7 = document.createElement('div')
+    div7.id = i15 + 35
+    dots7.appendChild(div7)
+}
+
+document.getElementById('35').classList.add('imgAtual7')
+
+let positionSlider7 = document.querySelectorAll('.dots7 div')
+
+for (let i16 = 0; i16 < positionSlider7.length; i16++) {
+    positionSlider7[i16].addEventListener('click', () => {
+        current7 = positionSlider7[i16].id
+        scrollSlider7 = false
+        slider7()
+    })
+}
+
+prev7.addEventListener('click', () => {
+    current7--
+    scrollSlider7 = false
+    slider7()
+})
+
+next7.addEventListener('click', () => {
+    current7++
+    scrollSlider7 = false
+    slider7()
+})
+
+function slider7() {
+    if (current7 >= 35 + (quant7.length)) {
+        current7 = 35
+    } else if (current7 < 35) {
+        current7 = 35 + (quant7.length) - 1
+    }
+
+    document.querySelector('.imgAtual7').classList.remove('imgAtual7')
+    imageSlider7.style.marginLeft = -30 * (current7 - 35) + 'rem'
+    document.getElementById(current7).classList.add('imgAtual7')
+}
+
+setInterval(() => {
+    if (scrollSlider7) {
+        current7++
+        slider7()
+    } else {
+        scrollSlider7 = true
+    }
+}, 4000)
