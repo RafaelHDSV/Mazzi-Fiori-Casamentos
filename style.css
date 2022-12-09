@@ -71,7 +71,11 @@ html {
 .next,
 .prev,
 .dots div,
-.imgAtual {
+.imgAtual,
+.next1,
+.prev1,
+.dots1 div,
+.imgAtual1 {
     cursor: pointer;
     transition: .5s all ease;
 }
@@ -553,7 +557,7 @@ nav {
 .prev:hover,
 .next1:hover,
 .prev1:hover {
-    opacity: .4;
+    opacity: .7;
 }
 
 .dots,
