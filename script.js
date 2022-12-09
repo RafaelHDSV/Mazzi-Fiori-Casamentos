@@ -234,3 +234,63 @@ setInterval(() => {
         scrollSlider1 = true
     }
 }, 4000)
+
+// SLIDER 2
+let dots2 = document.getElementById('dots2')
+let quant2 = document.querySelectorAll('.image2')
+let imageSlider2 = document.getElementById('image2')
+let prev2 = document.getElementById('prev2')
+let next2 = document.getElementById('next2')
+let scrollSlider2 = true
+let current2 = 10
+
+for (let i5 = 0; i5 < quant2.length; i5++) {
+    let div2 = document.createElement('div')
+    div2.id = i5 + 10
+    dots2.appendChild(div2)
+}
+
+document.getElementById('10').classList.add('imgAtual2')
+
+let positionSlider2 = document.querySelectorAll('.dots2 div')
+
+for (let i6 = 0; i6 < positionSlider2.length; i6++) {
+    positionSlider2[i6].addEventListener('click', () => {
+        current2 = positionSlider2[i6].id
+        scrollSlider2 = false
+        slider2()
+    })
+}
+
+prev2.addEventListener('click', () => {
+    current2--
+    scrollSlider2 = false
+    slider2()
+})
+
+next2.addEventListener('click', () => {
+    current2++
+    scrollSlider2 = false
+    slider2()
+})
+
+function slider2() {
+    if (current2 >= 10 + (quant2.length)) {
+        current2 = 10
+    } else if (current2 < 10) {
+        current2 = 10 + (quant2.length) - 1
+    }
+
+    document.querySelector('.imgAtual2').classList.remove('imgAtual2')
+    imageSlider2.style.marginLeft = -30 * (current2 - 10) + 'rem'
+    document.getElementById(current2).classList.add('imgAtual2')
+}
+
+setInterval(() => {
+    if (scrollSlider2) {
+        current2++
+        slider2()
+    } else {
+        scrollSlider2 = true
+    }
+}, 4000)
