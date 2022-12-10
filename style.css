@@ -898,7 +898,7 @@ nav {
     padding: 1rem 0 2rem 0;
 }
 
-.form {
+form {
     display: flex;
     flex-direction: column;
     justify-content: center;
