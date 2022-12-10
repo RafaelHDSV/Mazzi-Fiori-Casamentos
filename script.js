@@ -5,6 +5,8 @@ let hamburguerPath = document.getElementById('hamburguer_path')
 let sliderHeader = ['slider_header1.jpg', 'slider_header2.jpg', 'slider_header3.jpg', 'slider_header4.jpg', 'slider_header5.jpg']
 let i = 0
 let datas = document.getElementById('datas')
+let btnHired = document.querySelectorAll('.btn_hired')
+let weddingSelect = document.getElementById('wedding')
 
 const loop = setInterval(() => {
     i += 1
@@ -654,3 +656,36 @@ setInterval(() => {
         scrollSlider8 = true
     }
 }, 4000)
+
+for (let i = 0; i < btnHired.length; i++) {
+    btnHired[i].addEventListener('click', () => {
+        if (i == 0) {
+            weddingSelect.value = 'casamento_praia'
+            window.scrollTo(0, 5000)
+        } else if (i == 1) {
+            weddingSelect.value = 'casamento_livre'
+            window.scrollTo(0, 5000)
+        } else if (i == 2) {
+            weddingSelect.value = 'casamento_campo'
+            window.scrollTo(0, 5000)
+        } else if (i == 3) {
+            weddingSelect.value = 'casamento_fazenda'
+            window.scrollTo(0, 5000)
+        } else if (i == 4) {
+            weddingSelect.value = 'casamento_moderno'
+            window.scrollTo(0, 5000)
+        } else if (i == 5) {
+            weddingSelect.value = 'casamento_vibrante'
+            window.scrollTo(0, 5000)
+        } else if (i == 6) {
+            weddingSelect.value = 'casamento_eucaliptos'
+            window.scrollTo(0, 5000)
+        } else if (i == 7) {
+            weddingSelect.value = 'casamento_noivas'
+            window.scrollTo(0, 5000)
+        } else if (i == 8) {
+            weddingSelect.value = 'casamento_igreja'
+            window.scrollTo(0, 5000)
+        }
+    })
+}
