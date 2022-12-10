@@ -59,7 +59,10 @@ html {
 .header_mobile,
 .items_container_mobile,
 .img_partners img,
-.buttons button {
+.buttons button,
+.form_input input,
+.form_input textarea,
+.form_input select {
     cursor: pointer;
     transition: 1s all ease;
 }
@@ -116,7 +119,8 @@ html {
 .about_me p::selection,
 .title_container::selection,
 .datas_container p::selection,
-.buttons button::selection {
+.buttons button::selection,
+.form_input label::selection {
     background-color: var(--white);
     color: var(--pink);
 }
@@ -125,7 +129,9 @@ html {
 .services_item::selection,
 .services_item h3::selection,
 .services_item p::selection,
-.text_card p::selection {
+.text_card p::selection,
+.form_input input::selection,
+.form_input textarea::selection {
     background-color: var(--black);
     color: var(--green);
     fill: var(--green);
@@ -238,6 +244,7 @@ nav {
     font-family: 'Great Vibes', cursive;
     letter-spacing: .2rem;
     text-align: center;
+    width: 100%;
 }
 
 .text p {
@@ -491,7 +498,7 @@ nav {
     grid-template-rows: repeat(3, 1fr);
     column-gap: 2rem;
     row-gap: 2rem;
-    padding: 4rem 0;
+    padding: 4rem 1rem;
 }
 
 .card,
@@ -866,11 +873,64 @@ nav {
     padding: 1rem 0 2rem 0;
 }
 
-/* CORRIGIR */
 .form {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin: 2rem 0;
+    padding: 2rem 1rem;
+    background-color: var(--dark_green);
+    border-radius: 2rem;
+}
+
+.form_input {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0 1rem;
     gap: 1rem;
-    padding: 2weddingrem 0;
+}
+
+.form_input:nth-child(5) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 1rem 0 0 0;
+}
+
+.form_input:nth-child(5) label,
+.form_input:nth-child(5) textarea {
+    width: 100%;
+}
+
+.form_input label {
+    font-size: 17px;
+    font-family: 'Sunflower', sans-serif;
+    font-weight: 300;
+}
+
+.form_input input,
+.form_input textarea,
+.form_input select {
+    outline: 0;
+    border: none;
+    display: flex;
+    flex: 1;
+    padding: .7rem 0 .7rem 1rem;
+    font-size: 14px;
+    font-family: 'Sunflower', sans-serif;
+    font-weight: 300;
+    border-radius: .5rem;
+}
+
+.form_input input:focus,
+.form_input textarea:focus,
+.form_input select:focus {
+    border: 3px solid var(--pink);
 }
