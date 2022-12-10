@@ -1,3 +1,4 @@
+let preloader = document.querySelector('.preloader')
 let header = document.querySelector('header')
 let itemsMobile = document.querySelector('.items_container_mobile')
 let hamburguer = document.getElementById('hamburguer')
@@ -7,6 +8,11 @@ let i = 0
 let datas = document.getElementById('datas')
 let btnHired = document.querySelectorAll('.btn_hired')
 let weddingSelect = document.getElementById('wedding')
+
+window.addEventListener('load', () => {
+    preloader.classList.add('hide')
+    document.body.style.overflowY = 'visible'
+})
 
 const loop = setInterval(() => {
     i += 1
