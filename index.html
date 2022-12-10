@@ -263,8 +263,8 @@
                     <p>Casamento Minimalista na Praia</p>
 
                     <div class="buttons">
-                        <button>Abrir</button>
-                        <button>Contratar</button>
+                        <button id="btn_open">Abrir</button>
+                        <button id="btn_hired">Contratar</button>
                     </div>
                 </div>
             </div>
@@ -303,8 +303,8 @@
                     <p>Casamento em Casa ao Ar Livre</p>
 
                     <div class="buttons">
-                        <button>Abrir</button>
-                        <button>Contratar</button>
+                        <button id="btn_open">Abrir</button>
+                        <button id="btn_hired">Contratar</button>
                     </div>
                 </div>
             </div>
@@ -343,8 +343,8 @@
                     <p>Casamentor Romântico no Campo</p>
 
                     <div class="buttons">
-                        <button>Abrir</button>
-                        <button>Contratar</button>
+                        <button id="btn_open">Abrir</button>
+                        <button id="btn_hired">Contratar</button>
                     </div>
                 </div>
             </div>
@@ -383,8 +383,8 @@
                     <p>Casamento Rústico na Fazenda</p>
 
                     <div class="buttons">
-                        <button>Abrir</button>
-                        <button>Contratar</button>
+                        <button id="btn_open">Abrir</button>
+                        <button id="btn_hired">Contratar</button>
                     </div>
                 </div>
             </div>
@@ -424,8 +424,8 @@
                     <p>Casamento no Campo em Ar Livre</p>
 
                     <div class="buttons">
-                        <button>Abrir</button>
-                        <button>Contratar</button>
+                        <button id="btn_open">Abrir</button>
+                        <button id="btn_hired">Contratar</button>
                     </div>
                 </div>
             </div>
@@ -464,8 +464,8 @@
                     <p>Casamento no Campo com Vista do Céu</p>
 
                     <div class="buttons">
-                        <button>Abrir</button>
-                        <button>Contratar</button>
+                        <button id="btn_open">Abrir</button>
+                        <button id="btn_hired">Contratar</button>
                     </div>
                 </div>
             </div>
@@ -504,8 +504,8 @@
                     <p>Casamento Elegante no Campo</p>
 
                     <div class="buttons">
-                        <button>Abrir</button>
-                        <button>Contratar</button>
+                        <button id="btn_open">Abrir</button>
+                        <button id="btn_hired">Contratar</button>
                     </div>
                 </div>
             </div>
@@ -544,8 +544,8 @@
                     <p>Casamento em Casa ao Céu Aberto</p>
 
                     <div class="buttons">
-                        <button>Abrir</button>
-                        <button>Contratar</button>
+                        <button id="btn_open">Abrir</button>
+                        <button id="btn_hired">Contratar</button>
                     </div>
                 </div>
             </div>
@@ -584,8 +584,8 @@
                     <p>Casamento na Igreja Convencional</p>
 
                     <div class="buttons">
-                        <button>Abrir</button>
-                        <button>Contratar</button>
+                        <button id="btn_open">Abrir</button>
+                        <button id="btn_hired">Contratar</button>
                     </div>
                 </div>
             </div>
@@ -604,34 +604,44 @@
         </div>
     </div>
 
-    <!-- CORRIGIR -->
     <div id="contact" class="contact">
         <h2 class="title_container">Contato</h2>
 
         <div class="form">
-            <div class="name">
+            <div class="form_input">
                 <label for="name">Nome: </label>
-                <input type="text" id="name" name="name" placeholder="Entre com seu nome...">
+                <input type="text" id="name" name="name" placeholder="Entre com o seu nome...">
             </div>
 
-            <div class="email">
+            <div class="form_input">
                 <label for="email">Email: </label>
-                <input type="email" id="email" name="email" placeholder="Entre com seu email...">
+                <input type="email" id="email" name="email" placeholder="Entre com o seu email...">
             </div>
 
-            <div class="phone">
+            <div class="form_input">
                 <label for="phone">Telefone: </label>
-                <input type="phone" id="phone" name="phone" placeholder="Entre com seu telefone...">
+                <input type="phone" id="phone" name="phone" placeholder="Entre com o seu telefone...">
             </div>
 
-            <div class="wedding">
+            <div class="form_input">
                 <label for="wedding">Casamento Escolhido: </label>
-                <input type="" id="wedding" name="wedding">
+                <select name="wedding" id="wedding">
+                    <option value="wedding">Casamento Minimalista na Praia</option>
+                    <option value="wedding">Casamento em Casa ao Ar Livre</option>
+                    <option value="wedding">Casamentor Romântico no Campo</option>
+                    <option value="wedding">Casamento Rústico na Fazenda</option>
+                    <option value="wedding">Casamento no Campo em Ar Livre</option>
+                    <option value="wedding">Casamento no Campo com Vista do Céu</option>
+                    <option value="wedding">Casamento Elegante no Campo</option>
+                    <option value="wedding">Casamento em Casa ao Céu Aberto</option>
+                    <option value="wedding">Casamento na Igreja Convencional</option>
+                    <option value="wedding">Nenhuma opção</option>
+                </select>
             </div>
 
-            <div class="mensagem">
+            <div class="form_input">
                 <label for="mensagem">Mensagem:</label>
-                <textarea rows="5" id="mensagem" name="mensagem" placeholder="Entre com sua mensagem..."></textarea>
+                <textarea rows="5" id="mensagem" name="mensagem" placeholder="Entre com a sua mensagem..."></textarea>
             </div>
 
             <button class="btn_primary">Enviar</button>
