@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+/* font-family: 'Great Vibes', cursive; */
+
+@import url('https://fonts.googleapis.com/css2?family=Sunflower:wght@300;500&display=swap');
+/* font-family: 'Sunflower', sans-serif; */
+
+:root {
+    --white: #E8F1F2;
+    --green: #529396;
+    --pink: #e98789;
+    --dark_green: #273E47;
+    --black: #171D26;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+    min-height: 100vh;
+    overflow-y: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+}
+
+::-webkit-scrollbar {
+    width: 1rem;
+}
+
+
+::-webkit-scrollbar-track {
+    height: 1rem;
+    background: var(--black);
+}
+
+
+::-webkit-scrollbar-thumb {
+    background: var(--dark_green);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--green);
+}
+
+.preloader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white);
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    z-index: 3;
+}
+
+.hide {
+    animation: hide .5s forwards;
+}
+
+@keyframes hide {
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+nav {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    padding: 0 2rem;
+    background-color: var(--dark_green);
+    color: var(--white);
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+    flex-wrap: wrap;
+    z-index: 2;
+}
+
+.logo {
+    max-width: 4.5rem;
+    width: 100%;
+    filter: invert(100%);
+    padding: .5rem 0;
+}
+
+.logo:hover {
+    max-width: 5.5rem;
+}
+
+.weddings_main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--black);
+}
+
+.img_wedding {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 35%;
+    height: 100vh;
+    margin: -5rem;
+    border-right: 3px solid var(--green);
+    transform: skew(-10deg);
+    overflow: hidden;
+}
+
+.img_wedding img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50rem;
+    height: 100vh;
+    object-fit: cover;
+    transform: skew(10deg);
+}
+
+.main_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    height: 100vh;
+    padding: 7rem 0 0 0;
+    background-color: var(--black);
+    color: var(--white);
+}
