@@ -74,6 +74,13 @@ html {
     }
 }
 
+.card_low,
+.card_middle,
+.card_high {
+    cursor: pointer;
+    transition: 1s all ease;
+}
+
 nav {
     position: fixed;
     display: flex;
@@ -167,6 +174,12 @@ nav {
     color: var(--black);
 }
 
+.main_content h1,
+.main_content_2 h1 {
+    text-transform: uppercase;
+    text-shadow: 2.5px 1.5px 1px var(--pink);
+}
+
 .cards {
     display: flex;
     flex-direction: row;
@@ -183,9 +196,10 @@ nav {
 .card_high {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     width: 20rem;
-    height: 35rem;
+    height: 40rem;
     background-color: var(--white);
     color: var(--black);
     border-radius: 2rem;
@@ -233,8 +247,9 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 1.5rem;
     padding: 2rem 0;
-    font-size: 28px;
+    font-size: 22px;
     font-family: 'Sunflower', sans-serif;
     font-weight: 300;
     width: 100%;
@@ -243,8 +258,10 @@ nav {
 .option_row {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: left;
     align-items: center;
+    gap: 1rem;
+    padding: 0 1rem 0 2rem;
     width: 100%;
 }
 
@@ -261,20 +278,18 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* background-color: var(--dark_green);
-    padding: 1rem;
-    border-radius: 1rem; */
+    padding: 0 0 3rem 0;
 }
 
 .price p:nth-child(1) {
-    font-size: 36px;
+    font-size: 28px;
     font-family: 'Sunflower', sans-serif;
     font-weight: 500;
     color: var(--dark_green);
 }
 
 .price p:nth-child(2) {
-    font-size: 18px;
+    font-size: 14px;
     font-family: 'Sunflower', sans-serif;
     font-weight: 500;
     text-decoration: line-through;
