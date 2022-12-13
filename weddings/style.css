@@ -76,7 +76,10 @@ html {
 
 .card_low,
 .card_middle,
-.card_high {
+.card_high,
+.buy_low,
+.buy_middle,
+.buy_high {
     cursor: pointer;
     transition: 1s all ease;
 }
@@ -206,6 +209,12 @@ nav {
     box-shadow: 7px 7px 10px 0px rgba(0, 0, 0, 0.6);
 }
 
+.card_low:hover,
+.card_middle:hover,
+.card_high:hover {
+    opacity: .6;
+}
+
 .header_card {
     display: flex;
     justify-content: center;
@@ -234,12 +243,16 @@ nav {
 }
 
 .card_middle .header_card,
-.card_middle .header_card::after {
+.card_middle .header_card::after,
+.buy_middle .header_card,
+.buy_middle .header_card::after {
     background-color: var(--pink);
 }
 
 .card_high .header_card,
-.card_high .header_card::after {
+.card_high .header_card::after,
+.buy_high .header_card,
+.buy_high .header_card::after {
     background-color: var(--dark_green);
 }
 
@@ -248,7 +261,6 @@ nav {
     flex-direction: column;
     align-items: center;
     gap: 1.5rem;
-    padding: 2rem 0;
     font-size: 22px;
     font-family: 'Sunflower', sans-serif;
     font-weight: 300;
@@ -294,4 +306,30 @@ nav {
     font-weight: 500;
     text-decoration: line-through;
     color: var(--gray);
+}
+
+.buy_low,
+.buy_middle,
+.buy_high {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 20rem;
+    height: 40rem;
+    background-color: var(--white);
+    color: var(--black);
+    border-radius: 2rem;
+    box-shadow: 7px 7px 10px 0px rgba(0, 0, 0, 0.6);
+    position: relative;
+}
+
+.buttons_buy {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    gap: 2rem;
 }
