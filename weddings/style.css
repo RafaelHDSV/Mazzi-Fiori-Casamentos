@@ -110,6 +110,16 @@ nav {
     background-color: var(--black);
 }
 
+.weddings_main_2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--white);
+}
+
 .img_wedding {
     display: flex;
     flex-direction: column;
@@ -139,9 +149,20 @@ nav {
     align-items: center;
     width: 70%;
     height: 100vh;
-    padding: 7rem 0 0 0;
+    padding: 8rem 0 0 0;
     background-color: var(--black);
     color: var(--white);
+}
+
+.main_content_2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    height: 100vh;
+    padding: 8rem 0 0 0;
+    background-color: var(--white);
+    color: var(--black);
 }
 
 .cards {
