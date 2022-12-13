@@ -40,4 +40,4 @@ const loopWeddings = setInterval(() => {
 
         imgWedding.setAttribute('src', `../images/casamento_${weddingType}${i2}.jpg`)
     },
-    1500)
+    1000)

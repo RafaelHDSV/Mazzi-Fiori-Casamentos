@@ -172,6 +172,7 @@ nav {
     align-items: center;
     height: 100vh;
     gap: 3rem;
+    user-select: none;
 }
 
 .card_low,
@@ -185,6 +186,7 @@ nav {
     background-color: var(--white);
     color: var(--black);
     border-radius: 2rem;
+    box-shadow: 7px 7px 10px 0px rgba(0, 0, 0, 0.6);
 }
 
 .header_card {
@@ -200,6 +202,7 @@ nav {
     font-weight: 300;
     position: relative;
     border-radius: 1.7rem 1.7rem 0 0;
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5);
 }
 
 .header_card::after {
@@ -221,4 +224,31 @@ nav {
 .card_high .header_card,
 .card_high .header_card::after {
     background-color: var(--dark_green);
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+    font-size: 28px;
+    font-family: 'Sunflower', sans-serif;
+    font-weight: 300;
+    width: 100%;
+}
+
+.option_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.check_options {
+    color: var(--green);
+}
+
+.uncheck_options {
+    color: var(--pink);
 }
