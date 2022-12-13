@@ -6,6 +6,7 @@
 
 :root {
     --white: #E8F1F2;
+    --gray: #a8a8a8;
     --green: #529396;
     --pink: #e98789;
     --dark_green: #273E47;
@@ -157,6 +158,7 @@ nav {
 .main_content_2 {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     width: 70%;
     height: 100vh;
@@ -169,10 +171,11 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     height: 100vh;
     gap: 3rem;
     user-select: none;
+    padding: 0 0 2rem 0;
 }
 
 .card_low,
@@ -182,7 +185,7 @@ nav {
     flex-direction: column;
     align-items: center;
     width: 20rem;
-    height: 40rem;
+    height: 35rem;
     background-color: var(--white);
     color: var(--black);
     border-radius: 2rem;
@@ -251,4 +254,29 @@ nav {
 
 .uncheck_options {
     color: var(--pink);
+}
+
+.price {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: var(--dark_green);
+    padding: 1rem;
+    border-radius: 1rem; */
+}
+
+.price p:nth-child(1) {
+    font-size: 36px;
+    font-family: 'Sunflower', sans-serif;
+    font-weight: 500;
+    color: var(--dark_green);
+}
+
+.price p:nth-child(2) {
+    font-size: 18px;
+    font-family: 'Sunflower', sans-serif;
+    font-weight: 500;
+    text-decoration: line-through;
+    color: var(--gray);
 }
