@@ -79,7 +79,8 @@ html {
 .card_high,
 .buy_low,
 .buy_middle,
-.buy_high {
+.buy_high,
+.buttons_buy button {
     cursor: pointer;
     transition: 1s all ease;
 }
@@ -212,7 +213,7 @@ nav {
 .card_low:hover,
 .card_middle:hover,
 .card_high:hover {
-    opacity: .6;
+    opacity: .8;
 }
 
 .header_card {
@@ -316,7 +317,7 @@ nav {
     align-items: center;
     width: 20rem;
     height: 40rem;
-    background-color: var(--white);
+    background-image: linear-gradient(var(--white)20%, var(--pink), var(--green));
     color: var(--black);
     border-radius: 2rem;
     box-shadow: 7px 7px 10px 0px rgba(0, 0, 0, 0.6);
@@ -328,8 +329,27 @@ nav {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    padding: 3rem 0 0 0;
     display: flex;
     flex-direction: column;
     width: 80%;
     gap: 2rem;
+}
+
+.buttons_buy button {
+    outline: 0;
+    border: none;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: var(--dark_green);
+    color: var(--white);
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: 'Sunflower', sans-serif;
+    font-weight: 300;
+}
+
+.buttons_buy button:hover {
+    transform: scale(90%);
+    opacity: .7;
 }
