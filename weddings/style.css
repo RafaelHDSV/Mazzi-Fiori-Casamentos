@@ -143,3 +143,24 @@ nav {
     background-color: var(--black);
     color: var(--white);
 }
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 3rem;
+}
+
+.card_low,
+.card_middle,
+.card_high {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20rem;
+    height: 40rem;
+    border: 1px solid red;
+}
