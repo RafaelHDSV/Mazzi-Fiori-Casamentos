@@ -336,6 +336,15 @@ nav {
     gap: 2rem;
 }
 
+.buttons_buy a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark_green);
+    color: var(--white);
+    border-radius: 1rem;
+}
+
 .buttons_buy button {
     outline: 0;
     border: none;
