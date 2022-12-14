@@ -577,6 +577,7 @@ nav {
     width: 100%;
 }
 
+/* CORRIGIR */
 .image img,
 .image1 img,
 .image2 img,
@@ -588,8 +589,7 @@ nav {
 .image8 img {
     max-width: 30rem;
     max-height: 20rem;
-    width: 100vh;
-    height: 100vh;
+    width: 100%;
     object-fit: cover;
     border-radius: 1rem 1rem 0 0;
 }
@@ -1072,6 +1072,7 @@ footer a {
         width: 100%;
     }
 
+    /* CORRIGIR */
     .image img,
     .image1 img,
     .image2 img,
@@ -1085,208 +1086,6 @@ footer a {
         max-height: 20rem;
         width: 100vh;
         height: 100vh;
-    }
-
-    .next,
-    .next1,
-    .next2,
-    .next3,
-    .next4,
-    .next5,
-    .next6,
-    .next7,
-    .next8 {
-        position: absolute;
-        right: 1rem;
-        top: 50%;
-    }
-
-    .prev,
-    .prev1,
-    .prev2,
-    .prev3,
-    .prev4,
-    .prev5,
-    .prev6,
-    .prev7,
-    .prev8 {
-        position: absolute;
-        left: 1rem;
-        top: 50%;
-    }
-
-    .prev::before,
-    .prev::after,
-    .next::before,
-    .next::after,
-    .prev1::before,
-    .prev1::after,
-    .next1::before,
-    .next1::after,
-    .prev2::before,
-    .prev2::after,
-    .next2::before,
-    .next2::after,
-    .prev3::before,
-    .prev3::after,
-    .next3::before,
-    .next3::after,
-    .prev4::before,
-    .prev4::after,
-    .next4::before,
-    .next4::after,
-    .prev5::before,
-    .prev5::after,
-    .next5::before,
-    .next5::after,
-    .prev6::before,
-    .prev6::after,
-    .next6::before,
-    .next6::after,
-    .prev7::before,
-    .prev7::after,
-    .next7::before,
-    .next7::after,
-    .prev8::before,
-    .prev8::after,
-    .next8::before,
-    .next8::after {
-        content: "";
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 23px;
-        height: 10px;
-        background-color: var(--dark_green);
-        cursor: pointer;
-    }
-
-    .prev::after,
-    .next::after,
-    .prev1::after,
-    .next1::after,
-    .prev2::after,
-    .next2::after,
-    .prev3::after,
-    .next3::after,
-    .prev4::after,
-    .next4::after,
-    .prev5::after,
-    .next5::after,
-    .prev6::after,
-    .next6::after,
-    .prev7::after,
-    .next7::after,
-    .prev8::after,
-    .next8::after {
-        transform: rotate(45deg);
-    }
-
-    .prev::before,
-    .next::before,
-    .prev1::before,
-    .next1::before,
-    .prev2::before,
-    .next2::before,
-    .prev3::before,
-    .next3::before,
-    .prev4::before,
-    .next4::before,
-    .prev5::before,
-    .next5::before,
-    .prev6::before,
-    .next6::before,
-    .prev7::before,
-    .next7::before,
-    .prev8::before,
-    .next8::before {
-        transform: rotate(-45deg);
-    }
-
-    .next,
-    .next1,
-    .next2,
-    .next3,
-    .next4,
-    .next5,
-    .next6,
-    .next7,
-    .next8 {
-        transform: rotate(180deg);
-    }
-
-    .next:hover,
-    .prev:hover,
-    .next1:hover,
-    .prev1:hover,
-    .next2:hover,
-    .prev2:hover,
-    .next3:hover,
-    .prev3:hover,
-    .next4:hover,
-    .prev4:hover,
-    .next5:hover,
-    .prev5:hover,
-    .next6:hover,
-    .prev6:hover,
-    .next7:hover,
-    .prev7:hover,
-    .next8:hover,
-    .prev8:hover {
-        opacity: .7;
-    }
-
-    .dots,
-    .dots1,
-    .dots2,
-    .dots3,
-    .dots4,
-    .dots5,
-    .dots6,
-    .dots7,
-    .dots8 {
-        position: absolute;
-        bottom: 1rem;
-        left: 50%;
-        transform: translate(-50%);
-        display: flex;
-        flex-direction: row;
-        gap: 1rem;
-    }
-
-    .dots div,
-    .dots1 div,
-    .dots2 div,
-    .dots3 div,
-    .dots4 div,
-    .dots5 div,
-    .dots6 div,
-    .dots7 div,
-    .dots8 div {
-        border: 3px solid var(--dark_green);
-        padding: .3rem;
-        border-radius: 50%;
-    }
-
-    .dots div:hover,
-    .imgAtual,
-    .dots1 div:hover,
-    .imgAtual1,
-    .dots2 div:hover,
-    .imgAtual2,
-    .dots3 div:hover,
-    .imgAtual3,
-    .dots4 div:hover,
-    .imgAtual4,
-    .dots5 div:hover,
-    .imgAtual5,
-    .dots6 div:hover,
-    .imgAtual6,
-    .dots7 div:hover,
-    .imgAtual7,
-    .dots8 div:hover,
-    .imgAtual8 {
-        background-color: var(--green);
     }
 
     .text_card {
