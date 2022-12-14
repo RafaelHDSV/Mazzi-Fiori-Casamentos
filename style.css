@@ -1040,61 +1040,10 @@ footer a {
         margin: 0 0 0 2rem;
     }
 
-    .portifolio {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        background-color: var(--black);
-        color: var(--white);
-        padding: 1rem 0;
-    }
-
     .cards_container {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-        column-gap: 2rem;
-        row-gap: 2rem;
-        padding: 4rem 1rem;
-    }
-
-    .card,
-    .card1,
-    .card2,
-    .card3,
-    .card4,
-    .card5,
-    .card6,
-    .card7,
-    .card8 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        border-radius: 1rem;
-    }
-
-    .image_card,
-    .image_card1,
-    .image_card2,
-    .image_card3,
-    .image_card4,
-    .image_card5,
-    .image_card6,
-    .image_card7,
-    .image_card8 {
-        display: flex;
-        flex-direction: row;
-        max-width: 30rem;
-        max-height: 20rem;
-        width: 100%;
-        height: 100vh;
-        border-radius: 1rem 1rem 0 0;
-        overflow: hidden;
-        position: relative;
-        user-select: none;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
     }
 
     .slider,
@@ -1111,6 +1060,18 @@ footer a {
         width: 100%;
     }
 
+    .image,
+    .image1,
+    .image2,
+    .image3,
+    .image4,
+    .image5,
+    .image6,
+    .image7,
+    .image8 {
+        width: 100%;
+    }
+
     .image img,
     .image1 img,
     .image2 img,
@@ -1124,8 +1085,6 @@ footer a {
         max-height: 20rem;
         width: 100vh;
         height: 100vh;
-        object-fit: cover;
-        border-radius: 1rem 1rem 0 0;
     }
 
     .next,
@@ -1533,5 +1492,11 @@ footer a {
     .datas_container {
         width: 100%;
         margin: 2rem 0;
+    }
+
+    .cards_container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(9, 1fr);
     }
 }
