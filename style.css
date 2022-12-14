@@ -1037,7 +1037,8 @@ footer a {
 
     .datas_container {
         width: 50%;
-        margin: 0 0 0 2rem;
+        margin-left: 50%;
+        transform: translate(-50%);
     }
 
     .cards_container {
@@ -1155,12 +1156,14 @@ footer a {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
+        row-gap: 3rem;
         padding: 3rem 0;
         width: 100%;
     }
 
     .img_partners img {
-        margin-left: 5rem;
+        margin-left: 50%;
+        transform: translate(-50%);
     }
 
     .contact {
@@ -1272,7 +1275,9 @@ footer a {
 
     .datas_container {
         width: 100%;
-        margin: 2rem 0;
+        margin-left: 50%;
+        transform: translate(-50%);
+        padding: 2rem 0;
     }
 
     .cards_container {
@@ -1291,6 +1296,7 @@ footer a {
     }
 
     .img_partners img {
-        margin-left: 8rem;
+        margin-left: 50%;
+        transform: translate(-50%);
     }
 }
