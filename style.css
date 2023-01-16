@@ -578,6 +578,22 @@ nav {
 }
 
 /* CORRIGIR */
+.image,
+.image1,
+.image2,
+.image3,
+.image4,
+.image5,
+.image6,
+.image7,
+.image8 {
+    max-width: calc(30rem * 5);
+    max-height: 20rem;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1rem 1rem 0 0;
+}
+
 .image img,
 .image1 img,
 .image2 img,
@@ -587,9 +603,8 @@ nav {
 .image6 img,
 .image7 img,
 .image8 img {
-    max-width: 30rem;
-    max-height: 20rem;
-    width: 100%;
+    width: 30rem;
+    height: 20rem;
     object-fit: cover;
     border-radius: 1rem 1rem 0 0;
 }

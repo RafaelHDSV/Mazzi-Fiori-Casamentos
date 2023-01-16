@@ -170,7 +170,7 @@ function slider() {
     }
 
     document.querySelector('.imgAtual').classList.remove('imgAtual')
-    imageSlider.style.marginLeft = -30 * current + 'rem'
+    imageSlider.style.marginLeft = `${-30 * current}rem`
     document.getElementById(current).classList.add('imgAtual')
 }
 
