@@ -1,36 +1,50 @@
+// declaração das variaveis
 let preloader = document.querySelector('.preloader')
 let header = document.querySelector('header')
 let itemsMobile = document.querySelector('.items_container_mobile')
 let hamburguer = document.getElementById('hamburguer')
 let hamburguerPath = document.getElementById('hamburguer_path')
-let sliderHeader = ['slider_header1.jpg', 'slider_header2.jpg', 'slider_header3.jpg', 'slider_header4.jpg', 'slider_header5.jpg']
-let i = 0
 let datas = document.getElementById('datas')
 let btnHired = document.querySelectorAll('.btn_hired')
 let weddingSelect = document.getElementById('wedding')
 
+// funcao visibilidade do loader
 window.addEventListener('load', () => {
     preloader.classList.add('hide')
     document.body.style.overflowY = 'visible'
 })
 
+// mudança de imagens do header
+let i = 0
 const loop = setInterval(() => {
     i += 1
-
-    if (i == 5) {
+    if (i == 6) {
         i = 1
     }
+    header.style.backgroundImage = `url("images/slider_header${i}.jpg")`
+}, 3000)
 
-    header.style.backgroundImage = `url("images/${sliderHeader[i]}")`
-}, 5000)
-
+// digitação do header
 const typed = new Typed('.auto_type', {
-    strings: ['Incrível', 'Mágico', 'Inimaginável', 'Inesquecível', 'Perfeito', 'Magnífico', 'Sensacional', 'Excepcional', 'Completo', 'Satisfatório'],
+    strings: [
+        'Completo',
+        'Excepcional',
+        'Incrível',
+        'Inesquecível',
+        'Inimaginável',
+        'Mágico',
+        'Magnífico',
+        'Perfeito',
+        'Satisfatório',
+        'Sensacional',
+    ],
+
     typeSpeed: 150,
     backSpeed: 100,
     loop: true
 });
 
+// visibilidade do menu hamburguer no mobile
 hamburguer.addEventListener('click', () => {
     if (itemsMobile.style.display == 'flex') {
         hamburguerPath.style.fill = 'var(--white)'
@@ -41,6 +55,7 @@ hamburguer.addEventListener('click', () => {
     }
 })
 
+// circles dados
 window.onload = function onLoad() {
     var circleA = new ProgressBar.Circle('#circleA', {
         color: '#E8F1F2',
@@ -170,7 +185,7 @@ function slider() {
     }
 
     document.querySelector('.imgAtual').classList.remove('imgAtual')
-    imageSlider.style.marginLeft = `${-30 * current}rem`
+    imageSlider.style.marginLeft = `${-20 * current}rem`
     document.getElementById(current).classList.add('imgAtual')
 }
 
@@ -230,7 +245,7 @@ function slider1() {
     }
 
     document.querySelector('.imgAtual1').classList.remove('imgAtual1')
-    imageSlider1.style.marginLeft = -30 * (current1 - 5) + 'rem'
+    imageSlider1.style.marginLeft = -20 * (current1 - 5) + 'rem'
     document.getElementById(current1).classList.add('imgAtual1')
 }
 
@@ -290,7 +305,7 @@ function slider2() {
     }
 
     document.querySelector('.imgAtual2').classList.remove('imgAtual2')
-    imageSlider2.style.marginLeft = -30 * (current2 - 10) + 'rem'
+    imageSlider2.style.marginLeft = -20 * (current2 - 10) + 'rem'
     document.getElementById(current2).classList.add('imgAtual2')
 }
 
@@ -350,7 +365,7 @@ function slider3() {
     }
 
     document.querySelector('.imgAtual3').classList.remove('imgAtual3')
-    imageSlider3.style.marginLeft = -30 * (current3 - 15) + 'rem'
+    imageSlider3.style.marginLeft = -20 * (current3 - 15) + 'rem'
     document.getElementById(current3).classList.add('imgAtual3')
 }
 
@@ -410,7 +425,7 @@ function slider4() {
     }
 
     document.querySelector('.imgAtual4').classList.remove('imgAtual4')
-    imageSlider4.style.marginLeft = -30 * (current4 - 20) + 'rem'
+    imageSlider4.style.marginLeft = -20 * (current4 - 20) + 'rem'
     document.getElementById(current4).classList.add('imgAtual4')
 }
 
@@ -470,7 +485,7 @@ function slider5() {
     }
 
     document.querySelector('.imgAtual5').classList.remove('imgAtual5')
-    imageSlider5.style.marginLeft = -30 * (current5 - 25) + 'rem'
+    imageSlider5.style.marginLeft = -20 * (current5 - 25) + 'rem'
     document.getElementById(current5).classList.add('imgAtual5')
 }
 
@@ -530,7 +545,7 @@ function slider6() {
     }
 
     document.querySelector('.imgAtual6').classList.remove('imgAtual6')
-    imageSlider6.style.marginLeft = -30 * (current6 - 30) + 'rem'
+    imageSlider6.style.marginLeft = -20 * (current6 - 30) + 'rem'
     document.getElementById(current6).classList.add('imgAtual6')
 }
 
@@ -590,7 +605,7 @@ function slider7() {
     }
 
     document.querySelector('.imgAtual7').classList.remove('imgAtual7')
-    imageSlider7.style.marginLeft = -30 * (current7 - 35) + 'rem'
+    imageSlider7.style.marginLeft = -20 * (current7 - 35) + 'rem'
     document.getElementById(current7).classList.add('imgAtual7')
 }
 
@@ -650,7 +665,7 @@ function slider8() {
     }
 
     document.querySelector('.imgAtual8').classList.remove('imgAtual8')
-    imageSlider8.style.marginLeft = -30 * (current8 - 40) + 'rem'
+    imageSlider8.style.marginLeft = -20 * (current8 - 40) + 'rem'
     document.getElementById(current8).classList.add('imgAtual8')
 }
 
